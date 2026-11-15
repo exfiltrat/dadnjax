@@ -4,217 +4,203 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dad n Jax | Games and Videos by a Dad and His Son</title>
-  <meta name="description" content="Dad n Jax: games, maps and videos made together by a dad and his son. Watch, play and follow along.">
+  <meta name="description" content="Dad n Jax: Fortnite maps, Roblox games and videos made together by a dad and his son. Watch, play and follow along.">
+  <meta name="theme-color" content="#0b0b0b">
   <meta property="og:title" content="Dad n Jax">
-  <meta property="og:description" content="Games, maps and videos made together by a dad and his son.">
+  <meta property="og:description" content="Fortnite maps, Roblox games and videos made together by a dad and his son.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dadnjax.com">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<a class="skip" href="#games">Skip to games</a>
 
 <header class="nav">
-  <a class="logo" href="#top">Dad<span>n</span>Jax</a>
-  <nav>
-    <a href="#maps">Fortnite Maps</a>
-    <a href="#roblox">Roblox Games</a>
-    <a href="#games">Other Games</a>
-    <a href="#videos">Videos</a>
-    <a href="#shorts">Shorts</a>
+  <a class="logo" href="#top"><span class="logo-mark">DJ</span><span class="logo-text">Dad<i>n</i>Jax</span></a>
+  <nav aria-label="Main">
+    <a href="#games">Games</a>
+    <a href="#watch">Watch</a>
     <a href="#about">About</a>
     <a href="#follow">Follow</a>
   </nav>
+  <a class="btn btn-sm primary nav-cta" href="https://discord.gg/yzz6YP8vt" target="_blank" rel="noopener">Join Discord</a>
 </header>
 
 <main id="top">
 
   <!-- HERO -->
-  <div class="band hero-band">
-    <section class="hero">
-      <p class="tag">A dad. A son. Way too many games.</p>
-      <h1>Dad <span>n</span> Jax</h1>
-      <p class="lead">Built together. Played by everyone.</p>
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="dot"></span> A dad. A son. Way too many games.</p>
+      <h1 aria-label="Dad n Jax"><span class="l1" aria-hidden="true">Dad</span><span class="mid" aria-hidden="true">n</span><span class="l3" aria-hidden="true">Jax</span></h1>
+      <p class="motto">Built together. Played by everyone.</p>
       <div class="buttons">
-        <a class="btn primary" href="#videos">Watch our videos</a>
-        <a class="btn" href="#maps">Play our maps</a>
-        <a class="btn" href="#roblox">Roblox games</a>
+        <a class="btn primary" href="#games">Play our games</a>
+        <a class="btn ghost" href="#watch">Watch videos</a>
       </div>
-    </section>
-  </div>
+      <ul class="stats" aria-label="At a glance">
+        <li><b>2</b><span>Fortnite maps</span></li>
+        <li><b>1</b><span>Roblox game</span></li>
+        <li><b>2</b><span>Players on the team</span></li>
+      </ul>
+    </div>
 
-  <!-- FORTNITE MAPS -->
-  <div class="band">
-    <section id="maps">
-      <h2><span class="icon">🏝️</span> Fortnite Maps</h2>
-      <p class="sub">Islands we built in UEFN. Search the code in Fortnite to play.</p>
-      <!-- FEATURED MAP: swap in your best or newest map -->
-      <article class="featured">
-        <div class="video">
-          <!-- Swap this <img> for the trailer when there is one:
-          <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="Trailer" allowfullscreen loading="lazy"></iframe> -->
-          <img src="images/out-run-tsunami-for-brainrots.webp"
-               alt="Out Run Tsunami for Brainrots key art: brainrot characters running from a giant wave"
-               width="640" height="360" loading="lazy" decoding="async">
+    <article class="spotlight" data-code="1558-9870-5684">
+      <span class="badge fn">Fortnite</span>
+      <span class="ribbon">Featured map</span>
+      <div class="shot">
+        <!-- Swap this <img> for the trailer when there is one:
+        <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="Trailer" allowfullscreen loading="lazy"></iframe> -->
+        <img src="images/out-run-tsunami-for-brainrots.webp"
+             alt="Out Run Tsunami for Brainrots key art: brainrot characters running from a giant wave"
+             width="640" height="360" decoding="async" fetchpriority="high">
+      </div>
+      <div class="spot-body">
+        <h2>Out Run Tsunami for Brainrots</h2>
+        <p>A tsunami is coming. Can you out run it?</p>
+        <p class="code">Island code <b class="codetext">1558-9870-5684</b></p>
+        <div class="buttons left">
+          <button class="btn primary copy" type="button">Copy code</button>
+          <!-- Direct Island Link: play.fn.gg/island/<code> launches Fortnite straight
+               into the island. Swap play.fn.gg for fortnite.com if this link is ever
+               used as the destination in a paid ad campaign. -->
+          <a class="btn ghost" href="https://play.fn.gg/island/1558-9870-5684" target="_blank" rel="noopener">Open in Fortnite</a>
         </div>
-        <div class="featured-info">
-          <p class="tag">Featured map</p>
+      </div>
+    </article>
+  </section>
+
+  <!-- GAMES -->
+  <section id="games" class="block">
+    <header class="block-head">
+      <h2><span class="slash">//</span> Games</h2>
+      <div class="filters" role="group" aria-label="Filter games">
+        <button type="button" class="chip is-on" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="chip" data-filter="fn" aria-pressed="false">Fortnite</button>
+        <button type="button" class="chip" data-filter="rb" aria-pressed="false">Roblox</button>
+      </div>
+    </header>
+
+    <div class="cards">
+      <article class="card" data-platform="fn" data-code="1558-9870-5684">
+        <span class="badge fn">Fortnite</span>
+        <div class="thumb"><img src="images/out-run-tsunami-for-brainrots.webp" alt="Out Run Tsunami for Brainrots key art" width="640" height="360" loading="lazy" decoding="async"></div>
+        <div class="card-body">
           <h3>Out Run Tsunami for Brainrots</h3>
           <p>A tsunami is coming. Can you out run it? Our first published map, out since October 2026.</p>
-          <p class="code">Island code: <b class="codetext">1558-9870-5684</b></p>
+          <p class="code">Island code <b class="codetext">1558-9870-5684</b></p>
           <div class="buttons left">
-            <button class="btn primary copy" type="button">Copy code</button>
-            <!-- Direct Island Link: play.fn.gg/island/<code> launches Fortnite straight
-                 into the island. Swap play.fn.gg for fortnite.com if this link is ever
-                 used as the destination in a paid ad campaign. -->
-            <a class="btn" href="https://play.fn.gg/island/1558-9870-5684" target="_blank" rel="noopener">Open in Fortnite</a>
+            <button class="btn sm primary copy" type="button">Copy code</button>
+            <a class="btn sm ghost" href="https://play.fn.gg/island/1558-9870-5684" target="_blank" rel="noopener">Open in Fortnite</a>
           </div>
         </div>
       </article>
 
-      <h3 class="subhead">All maps</h3>
-      <div class="grid">
-        <!-- Copy a card for each map. Replace the text, image and code. -->
-        <article class="card">
-          <div class="thumb">
-            <img src="images/lasers-for-brainrots.webp"
-                 alt="Lasers for Brainrots key art: a character blasting a laser through a steel wall"
-                 width="640" height="360" loading="lazy" decoding="async">
-          </div>
+      <article class="card" data-platform="fn" data-code="8352-4332-2043">
+        <span class="badge fn">Fortnite</span>
+        <div class="thumb"><img src="images/lasers-for-brainrots.webp" alt="Lasers for Brainrots key art: a character blasting a laser through a steel wall" width="640" height="360" loading="lazy" decoding="async"></div>
+        <div class="card-body">
           <h3>Lasers for Brainrots</h3>
           <p>Can you make it past the laser wall? Our newest map.</p>
-          <p class="code">Island code: <b class="codetext">8352-4332-2043</b></p>
+          <p class="code">Island code <b class="codetext">8352-4332-2043</b></p>
           <div class="buttons left">
-            <button class="btn small copy" type="button">Copy code</button>
-            <a class="btn small" href="https://play.fn.gg/island/8352-4332-2043" target="_blank" rel="noopener">Open in Fortnite</a>
+            <button class="btn sm primary copy" type="button">Copy code</button>
+            <a class="btn sm ghost" href="https://play.fn.gg/island/8352-4332-2043" target="_blank" rel="noopener">Open in Fortnite</a>
           </div>
-        </article>
-        <article class="card">
-          <div class="thumb">
-            <img src="images/next-fortnite-map.webp"
-                 alt="Next Fortnite map coming soon"
-                 width="640" height="360" loading="lazy" decoding="async">
-          </div>
-          <h3>Next map</h3>
-          <p>Follow along to be first to play.</p>
-          <a class="btn small" href="#follow">Follow us</a>
-        </article>
-      </div>
+        </div>
+      </article>
 
-      <h3 class="subhead">How to play</h3>
-      <ol class="steps">
-        <li>Open Fortnite and go to the Discover tab.</li>
-        <li>Click the search bar and paste an island code.</li>
-        <li>Hit Play, then tell us your best score.</li>
-      </ol>
-    </section>
-  </div>
-
-  <!-- ROBLOX GAMES -->
-  <div class="band alt">
-    <section id="roblox">
-      <h2><span class="icon">🧱</span> Roblox Games</h2>
-      <p class="sub">Games we are building in Roblox Studio. Find us on Roblox as dadnjaxproductions.</p>
-      <div class="grid">
-        <!-- When a game is published, swap the image for its thumbnail and the
-             button for: <a class="btn small" href="https://www.roblox.com/games/PLACE_ID" target="_blank" rel="noopener">Play on Roblox</a> -->
-        <article class="card">
-          <div class="thumb">
-            <img src="images/contractor-empire.webp"
-                 alt="Contractor Empire on Roblox"
-                 width="768" height="432" loading="lazy" decoding="async">
-          </div>
+      <article class="card" data-platform="rb">
+        <span class="badge rb">Roblox</span>
+        <div class="thumb"><img src="images/contractor-empire.webp" alt="Contractor Empire on Roblox" width="768" height="432" loading="lazy" decoding="async"></div>
+        <div class="card-body">
           <h3>Contractor Empire</h3>
-          <p>Build up your contracting business and see how big your empire can get.</p>
-          <a class="btn small" href="https://www.roblox.com/games/73430560928805/Contractor-Empire" target="_blank" rel="noopener">Play on Roblox</a>
-        </article>
-        <article class="card">
-          <div class="thumb">
-            <img src="images/roblox-next-game.webp"
-                 alt="Next Roblox game, coming soon"
-                 width="640" height="360" loading="lazy" decoding="async">
+          <p>Build up your contracting business and see how big your empire can get. Free to play.</p>
+          <div class="buttons left">
+            <a class="btn sm primary" href="https://www.roblox.com/games/73430560928805/Contractor-Empire" target="_blank" rel="noopener">Play on Roblox</a>
           </div>
-          <h3>Next game</h3>
+        </div>
+      </article>
+
+      <article class="card soon" data-platform="fn">
+        <span class="badge fn">Fortnite</span>
+        <div class="thumb"><img src="images/next-fortnite-map.webp" alt="Next Fortnite map coming soon" width="640" height="360" loading="lazy" decoding="async"></div>
+        <div class="card-body">
+          <h3>Next map <em>Loading...</em></h3>
+          <p>Follow along to be first to play.</p>
+          <div class="buttons left"><a class="btn sm ghost" href="#follow">Follow us</a></div>
+        </div>
+      </article>
+
+      <article class="card soon" data-platform="rb">
+        <span class="badge rb">Roblox</span>
+        <div class="thumb"><img src="images/roblox-next-game.webp" alt="Next Roblox game, coming soon" width="640" height="360" loading="lazy" decoding="async"></div>
+        <div class="card-body">
+          <h3>Next game <em>Loading...</em></h3>
           <p>More blocks, more brainrots. Stay tuned.</p>
-          <a class="btn small" href="#follow">Follow us</a>
-        </article>
-      </div>
-    </section>
-  </div>
+          <div class="buttons left"><a class="btn sm ghost" href="#follow">Follow us</a></div>
+        </div>
+      </article>
+    </div>
 
-  <!-- OTHER GAMES -->
-  <div class="band">
-    <section id="games">
-      <h2><span class="icon">🎮</span> Other Games</h2>
-      <p class="sub">Anything else we try outside of Fortnite and Roblox.</p>
-      <div class="grid">
-        <article class="card">
-          <div class="thumb">
-            <img src="images/other-game-coming-soon.webp"
-                 alt="New game in the works"
-                 width="640" height="360" loading="lazy" decoding="async">
-          </div>
-          <h3>Something new</h3>
-          <p>Something new is in the works.</p>
-          <a class="btn small" href="#follow">Follow us</a>
-        </article>
-      </div>
-    </section>
-  </div>
+    <div class="howto">
+      <h3>How to play our Fortnite maps</h3>
+      <ol>
+        <li><b>1</b><span>Open Fortnite and go to the <em>Discover</em> tab.</span></li>
+        <li><b>2</b><span>Click the search bar and paste an island code.</span></li>
+        <li><b>3</b><span>Hit Play, then tell us your best score.</span></li>
+      </ol>
+    </div>
+  </section>
 
-  <!-- VIDEOS -->
-  <div class="band alt">
-    <section id="videos">
-      <h2><span class="icon">📺</span> Latest Videos</h2>
-      <p class="sub">Full videos from our YouTube channel.</p>
-      <div class="grid">
-        <!--
-          To embed a video, replace each placeholder div with:
-          <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="Video title" allowfullscreen loading="lazy"></iframe>
-        -->
-        <div class="video">Video 1</div>
-        <div class="video">Video 2</div>
-        <div class="video">Video 3</div>
-      </div>
-    </section>
-  </div>
+  <!-- WATCH -->
+  <section id="watch" class="block alt">
+    <header class="block-head">
+      <h2><span class="slash">//</span> Watch</h2>
+      <a class="btn sm ghost" href="https://www.youtube.com/@dadnjax" target="_blank" rel="noopener">Open our YouTube</a>
+    </header>
 
-  <!-- SHORTS / CLIPS -->
-  <div class="band">
-    <section id="shorts">
-      <h2><span class="icon">⚡</span> Shorts and Clips</h2>
-      <p class="sub">Quick highlights, funny moments and behind the scenes.</p>
-      <div class="grid tall">
-        <div class="video vertical">Short 1</div>
-        <div class="video vertical">Short 2</div>
-        <div class="video vertical">Short 3</div>
-        <div class="video vertical">Short 4</div>
-      </div>
-    </section>
-  </div>
+    <h3 class="sub-title">Latest videos</h3>
+    <div class="videos">
+      <!--
+        To embed a video, replace each placeholder div with:
+        <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="Video title" allowfullscreen loading="lazy"></iframe>
+      -->
+      <div class="video"><span>Video 1</span></div>
+      <div class="video"><span>Video 2</span></div>
+      <div class="video"><span>Video 3</span></div>
+    </div>
 
-  <!-- ABOUT -->
-  <div class="band alt">
-    <section id="about">
-      <h2><span class="icon">👋</span> About Us</h2>
-      <div class="about">
-        <p>Hi, we are Dad and Jax. Jax loves games and wants to make videos for a living. I am here to help him build it the right way, and we have a lot of fun doing it.</p>
-        <p>Everything on this site is made by us. Thanks for watching and playing.</p>
-      </div>
-    </section>
-  </div>
+    <h3 class="sub-title">Shorts and clips</h3>
+    <div class="shorts">
+      <div class="video vertical"><span>Short 1</span></div>
+      <div class="video vertical"><span>Short 2</span></div>
+      <div class="video vertical"><span>Short 3</span></div>
+      <div class="video vertical"><span>Short 4</span></div>
+    </div>
+  </section>
 
-  <!-- FOLLOW -->
-  <div class="band">
-    <section id="follow">
-      <h2><span class="icon">🔔</span> Follow Along</h2>
-      <p class="sub">Subscribe so you never miss a video.</p>
+  <!-- ABOUT + FOLLOW -->
+  <section id="about" class="block two-col">
+    <div class="about">
+      <h2><span class="slash">//</span> About us</h2>
+      <p>Hi, we are Dad and Jax. Jax loves games and wants to make videos for a living. I am here to help him build it the right way, and we have a lot of fun doing it.</p>
+      <p>Everything on this site is made by us. Thanks for watching and playing.</p>
+    </div>
+
+    <div id="follow" class="follow">
+      <h2><span class="slash">//</span> Follow along</h2>
+      <p class="muted">Subscribe so you never miss a video.</p>
       <div class="socials">
         <!-- LIVE -->
         <a class="social yt" href="https://www.youtube.com/@dadnjax" target="_blank" rel="noopener"><span>▶️</span> YouTube</a>
         <a class="social" href="https://www.fortnite.com/@dadnjax" target="_blank" rel="noopener"><span>🏝️</span> Fortnite Creator Page</a>
         <a class="social" href="https://www.roblox.com/users/7947299672/profile" target="_blank" rel="noopener"><span>🧱</span> Roblox</a>
+        <a class="social" href="https://discord.gg/yzz6YP8vt" target="_blank" rel="noopener"><span>💬</span> Discord</a>
+        <a class="social" href="https://www.facebook.com/share/1EFTiLrVED/" target="_blank" rel="noopener"><span>👍</span> Facebook</a>
 
-        <!-- TODO: swap each "#" for the real profile URL as each account goes live.
+        <!-- TODO: swap each "#" for the real profile URL as each account goes live,
+             and delete the "soon" class so the button becomes clickable.
 
              Handle plan (availability checked 8 Nov 2026):
                dadnjax             -> X, Twitch        (free)
@@ -227,34 +213,56 @@
                https://www.instagram.com/dadnjaxproductions/
                https://x.com/dadnjax
                https://www.twitch.tv/dadnjax
-               https://discord.gg/INVITE
-               https://www.facebook.com/PAGE
         -->
-        <a class="social" href="#" target="_blank" rel="noopener"><span>🎵</span> TikTok</a>
-        <a class="social" href="#" target="_blank" rel="noopener"><span>📸</span> Instagram</a>
-        <a class="social" href="#" target="_blank" rel="noopener"><span>✖️</span> X / Twitter</a>
-        <a class="social" href="#" target="_blank" rel="noopener"><span>🟣</span> Twitch</a>
-        <a class="social" href="https://discord.gg/yzz6YP8vt" target="_blank" rel="noopener"><span>💬</span> Discord</a>
-        <a class="social" href="https://www.facebook.com/share/1EFTiLrVED/" target="_blank" rel="noopener"><span>👍</span> Facebook</a>
+        <a class="social soon" href="#" aria-disabled="true"><span>🎵</span> TikTok <em>soon</em></a>
+        <a class="social soon" href="#" aria-disabled="true"><span>📸</span> Instagram <em>soon</em></a>
+        <a class="social soon" href="#" aria-disabled="true"><span>✖️</span> X / Twitter <em>soon</em></a>
+        <a class="social soon" href="#" aria-disabled="true"><span>🟣</span> Twitch <em>soon</em></a>
       </div>
       <p class="contact">Business or collab inquiries: <a href="mailto:hello@dadnjax.com">hello@dadnjax.com</a></p>
-    </section>
-  </div>
+    </div>
+  </section>
 
 </main>
 
 <footer>
-  <p>&copy; <span id="y"></span> Dad n Jax. All rights reserved. Not affiliated with or endorsed by Epic Games. Fortnite is a trademark of Epic Games, Inc.</p>
+  <p>&copy; <span id="y"></span> Dad n Jax. All rights reserved. Not affiliated with or endorsed by Epic Games or Roblox. Fortnite is a trademark of Epic Games, Inc. Roblox is a trademark of Roblox Corporation.</p>
 </footer>
 
 <script>
 document.getElementById("y").textContent = new Date().getFullYear();
+
+/* copy island code */
 document.querySelectorAll(".copy").forEach(function(b){
   b.addEventListener("click",function(){
-    var c=b.closest("article").querySelector(".codetext").textContent;
+    var c=b.closest("[data-code]").querySelector(".codetext").textContent;
     var old=b.textContent;
-    navigator.clipboard.writeText(c).then(function(){b.textContent="Copied!";setTimeout(function(){b.textContent=old},1500)});
+    navigator.clipboard.writeText(c).then(function(){
+      b.textContent="Copied!";
+      setTimeout(function(){b.textContent=old},1500);
+    });
   });
+});
+
+/* game filters */
+var chips=document.querySelectorAll(".chip");
+chips.forEach(function(chip){
+  chip.addEventListener("click",function(){
+    var f=chip.dataset.filter;
+    chips.forEach(function(c){
+      var on=c===chip;
+      c.classList.toggle("is-on",on);
+      c.setAttribute("aria-pressed",on);
+    });
+    document.querySelectorAll(".cards .card").forEach(function(card){
+      card.hidden = !(f==="all" || card.dataset.platform===f);
+    });
+  });
+});
+
+/* "soon" social buttons do nothing yet */
+document.querySelectorAll(".social.soon").forEach(function(a){
+  a.addEventListener("click",function(e){e.preventDefault()});
 });
 </script>
 </body>
