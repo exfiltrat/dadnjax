@@ -169,3 +169,10 @@ footer{border-top:1px solid var(--line);text-align:center;padding:30px 5vw;color
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 }
+
+/* about (near top) */
+.about-block{padding-top:30px;padding-bottom:30px}
+.about-block h2{margin-bottom:16px}
+.about-card{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--g);border-radius:8px;padding:24px 28px}
+.about-card p{color:var(--muted);max-width:820px}
+.about-card p+p{margin-top:12px}
